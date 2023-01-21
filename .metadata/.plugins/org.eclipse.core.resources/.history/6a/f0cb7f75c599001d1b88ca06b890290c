@@ -1,0 +1,37 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int codigoPeca1, numeroPeca1, codigoPeca2, numeroPeca2;
+		double valorPeca1, valorPeca2, valorAPagar;
+		String x;
+		
+		x = sc.next();
+		codigoPeca1 = sc.nextInt();
+		System.out.print(" ");
+		sc.nextLine();
+		numeroPeca1 = sc.nextInt();
+		System.out.print(" ");
+		valorPeca1 = sc.nextDouble();
+		System.out.println();
+		
+		codigoPeca2 = sc.nextInt();
+		System.out.print(" ");
+		numeroPeca2 = sc.nextInt();
+		System.out.print(" ");
+		valorPeca2 = sc.nextDouble();
+		
+		valorAPagar = (int)numeroPeca1 * valorPeca1 + (int)numeroPeca2 * valorPeca2;
+		
+		System.out.println("VALOR A PAGAR: " + String.format("%.2f", valorAPagar));
+		
+		sc.close();
+	}
+
+}

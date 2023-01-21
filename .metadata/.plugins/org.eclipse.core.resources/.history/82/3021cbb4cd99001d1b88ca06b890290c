@@ -1,0 +1,25 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double valorA, valorB, valorC, areaTriangulo, areaCirculo, areaTrapezio, areaQuadrado,
+		areaRetangulo;
+		
+		valorA = sc.nextDouble();
+		valorB = sc.nextDouble();
+		valorC = sc.nextDouble();
+		
+		areaTriangulo = valorA * valorC / 2.0;
+		
+		System.out.println("TRIANGULO: " + String.format("%.3f", areaTriangulo));
+		
+		sc.close();
+	}
+
+}

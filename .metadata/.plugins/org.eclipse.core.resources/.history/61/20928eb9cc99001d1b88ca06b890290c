@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double valorA, valorB, valorC;
+		
+		valorA = sc.nextDouble();
+		valorB = sc.nextDouble();
+		valorC = sc.nextDouble();
+		
+		valorAPagar = (int)numeroPeca1 * valorPeca1 + (int)numeroPeca2 * valorPeca2;
+		
+		System.out.println("VALOR A PAGAR: " + String.format("%.2f", valorAPagar));
+		
+		sc.close();
+	}
+
+}

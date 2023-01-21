@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int codigoPeca1, numeroPeca1;
+		double valorPeca1, valorPeca2, valorAPagar;
+
+		codigoPeca1 = sc.nextInt();
+		System.out.print(" ");
+		numeroPeca1 = sc.nextInt();
+		System.out.print(" ");
+		valorPeca1 = sc.nextDouble();
+		System.out.println();
+		
+		salario = (int)numeroHoras * valorHoras;
+		
+		System.out.println("NUMBER = " + numeroFuncionario);
+		System.out.println("SALARY = U$ " + String.format("%.2f", salario));
+		
+		sc.close();
+	}
+
+}
